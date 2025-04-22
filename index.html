@@ -496,40 +496,93 @@ img {
     margin-bottom: 1.5rem;
 }
 
-.education {
-    margin-top: 2rem;
-}
 
-.education h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
+.edu-section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
 
-.education-item {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px var(--shadow-color);
-    transition: var(--transition);
-}
+    .edu-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
 
-.education-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--shadow-color);
-}
+    .edu-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: #fdfdfd;
+        border: 1px solid #e0e0e0;
+        border-left: 4px solid #3498db;
+        border-radius: 12px;
+        padding: 1.2rem 1.5rem;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
 
-.education-item h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
+    .edu-card-content {
+        flex: 1 1 70%;
+    }
 
-.education-item .timeline {
-    color: var(--primary-color);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
+    .edu-card-date {
+        flex: 0 0 auto;
+        font-size: 0.95rem;
+        color: #888;
+        font-weight: bold;
+        text-align: right;
+        min-width: 120px;
+        margin-top: 4px;
+    }
+
+    .edu-card-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+        color: #34495e;
+    }
+
+    .edu-card-text {
+        margin: 0.2rem 0;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .edu-highlight {
+        font-weight: bold;
+        color: #3498db;
+    }
+
+
+
+    /* .edu-card-text {
+        margin: 0.2rem 0;
+        color: #555;
+        line-height: 1.5;
+        flex: 1;
+    }
+
+    .edu-card-date {
+        font-size: 0.95rem;
+        color: #888;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+ */
+
+
+
+
+
+
+
+
+
 
 .about-stats {
     flex: 1;
@@ -1311,7 +1364,7 @@ img {
     <!-- Navigation -->
     <nav id="navbar">
         <div class="logo">
-            <h1>Nitin<span>Thakur</span></h1>
+            <h1>Nitin Thakur</h1>
         </div>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -1352,7 +1405,7 @@ img {
             <div class="hero-image">
                 <div class="profile-container">
                     <!-- Replace with your actual profile image -->
-                    <img src="/api/placeholder/400/400" alt="Nitin Thakur" class="profile-img">
+                    <img src="./resources/nitin.jpeg" alt="Nitin Thakur" class="profile-img">
                 </div>
             </div>
         </div>
@@ -1371,28 +1424,42 @@ img {
             <div class="about-text">
                 <p>I am a Computer Science Engineering student at Lovely Professional University, passionate about Data Science, Machine Learning, and Database Management. With a strong foundation in programming languages like Python, Java, and C++, I enjoy solving complex problems and developing innovative solutions.</p>
                 <p>My experience spans from developing machine learning models to database design and digital marketing strategies. I'm always eager to learn new technologies and apply them to real-world challenges.</p>
-                <div class="education">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <h4>Bachelor of Technology - Computer Science and Engineering</h4>
-                        <p>Lovely Professional University, Punjab, India</p>
-                        <p class="timeline">Since August 2022</p>
+               
+                <div class="edu-section">
+                    <h3 class="edu-title">Education</h3>
+                
+                    <div class="edu-card">
+                        <div class="edu-card-content">
+                            <h4 class="edu-card-title">Bachelor of Technology - Computer Science and Engineering</h4> 
+                            <p class="edu-card-text">Lovely Professional University, Punjab, India</p>                    
+                            <div class="edu-card-date">Since August 2022</div>     
+                        </div>
+
+
                     </div>
-                    <div class="education-item">
-                        <h4>Senior School Education</h4>
-                        <p>Mahavir Public School, Sunder Nager, H.P</p>
-                        <p class="timeline">2021 - 2022</p>
-                        <p>Percentage: 76.2%</p>
+                
+                    <div class="edu-card">
+                        <div class="edu-card-content">
+                            <h4 class="edu-card-title">Senior School Education</h4>
+                            <p class="edu-card-text">Mahavir Public School, Sunder Nager, Himachal Pradesh</p>
+                            <p class="edu-card-text">Percentage: 76.2%</p>
+                            <div class="edu-card-date">2021 - 2022</div>
+                        </div>
+
                     </div>
-                    <div class="education-item">
-                        <h4>Secondary School Education</h4>
-                        <p>Mahavir Public School, Sunder Nager, H.P</p>
-                        <p class="timeline">2019 - 2020</p>
-                        <p>Percentage: 72.6%</p>
+                
+                    <div class="edu-card">
+                        <div class="edu-card-content">
+                            <h4 class="edu-card-title">Secondary School Education</h4>
+                            <p class="edu-card-text">Mahavir Public School, Sunder Nager, Himachal Pradesh</p>
+                            <p class="edu-card-text">Percentage: 72.6%</p>
+                            <div class="edu-card-date">2019 - 2020</div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            <div class="about-stats">
+            <!-- <div class="about-stats">
                 <div class="stat-item">
                     <h3>3+</h3>
                     <p>Projects Completed</p>
@@ -1405,7 +1472,7 @@ img {
                     <h3>3+</h3>
                     <p>Years Experience</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -1610,15 +1677,10 @@ img {
         <div class="projects-grid">
             <!-- Project 1 -->
             <div class="project-card">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/250" alt="Customer Segmentation Project">
-                </div>
+                <!-- <div class="project-img"> -->
+                    <!-- <img src="/api/placeholder/400/250" alt="Customer Segmentation Project"> -->
+                <!-- </div> -->
                 <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>scikit-learn</span>
-                        <span>pandas</span>
-                    </div>
                     <h3>Customer Segmentation - K-Means Clustering</h3>
                     <p>Developed a customer segmentation model using K-Means Clustering to analyse and group customers based on their behaviour.</p>
                     <ul class="project-details">
@@ -1627,8 +1689,14 @@ img {
                         <li>Created visualization dashboards to interpret customer segments</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
-                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <!-- <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>pandas</span>
                     </div>
                     <div class="project-date">
                         <p><i class="far fa-calendar-alt"></i> December 2024</p>
@@ -1638,16 +1706,10 @@ img {
             
             <!-- Project 2 -->
             <div class="project-card">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/250" alt="Fake News Detection Project">
-                </div>
+                <!-- <div class="project-img"> -->
+                    <!-- <img src="/api/placeholder/400/250" alt="Fake News Detection Project"> -->
+                <!-- </div> -->
                 <div class="project-info">
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>SVM</span>
-                        <span>CNN</span>
-                    </div>
                     <h3>Detecting Fake News - NLP & Machine Learning</h3>
                     <p>Developed a fake news detection model using Natural Language Processing (NLP) and Machine Learning techniques.</p>
                     <ul class="project-details">
@@ -1656,8 +1718,14 @@ img {
                         <li>Achieved high accuracy in distinguishing between real and fake news articles</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
-                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <!-- <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>SVM</span>
+                        <span>CNN</span>
                     </div>
                     <div class="project-date">
                         <p><i class="far fa-calendar-alt"></i> September 2024</p>
@@ -1667,15 +1735,10 @@ img {
             
             <!-- Project 3 -->
             <div class="project-card">
-                <div class="project-img">
-                    <img src="/api/placeholder/400/250" alt="E-Learning Platform Project">
-                </div>
+                <!-- <div class="project-img"> -->
+                    <!-- <img src="/api/placeholder/400/250" alt="E-Learning Platform Project"> -->
+                <!-- </div> -->
                 <div class="project-info">
-                    <div class="project-tags">
-                        <span>MySQL</span>
-                        <span>SQL</span>
-                        <span>Database Design</span>
-                    </div>
                     <h3>E-Learning Platform - Database Development</h3>
                     <p>Designed and developed a MySQL database to manage users, courses, progress, and feedback for an E-Learning platform.</p>
                     <ul class="project-details">
@@ -1684,8 +1747,13 @@ img {
                         <li>Developed stored procedures and triggers for automated data management</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
-                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                        <!-- <a href="#" class="btn project-btn"><i class="fas fa-code"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Documentation</a> -->
+                    </div>
+                    <div class="project-tags">
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>Database Design</span>
                     </div>
                     <div class="project-date">
                         <p><i class="far fa-calendar-alt"></i> July 2024</p>
@@ -1710,7 +1778,7 @@ img {
                     <h3>Cloud Computing</h3>
                     <p class="certificate-issuer">NPTEL</p>
                     <p class="certificate-date">July - October 2024</p>
-                    <a href="#" class="btn certificate-btn">View Certificate</a>
+                    <a href="resources/nptel.jpeg" target="_blank" class="btn certificate-btn">View Certificate</a>
                 </div>
             </div>
             
@@ -1722,7 +1790,7 @@ img {
                     <h3>ChatGPT Advanced Data Analysis</h3>
                     <p class="certificate-issuer">Vanderbilt University</p>
                     <p class="certificate-date">April 2024</p>
-                    <a href="#" class="btn certificate-btn">View Certificate</a>
+                    <a href="resources/adv.jpeg" target="_blank" class="btn certificate-btn">View Certificate</a>
                 </div>
             </div>
             
@@ -1734,7 +1802,7 @@ img {
                     <h3>GenAI for Everyone</h3>
                     <p class="certificate-issuer">Coursera</p>
                     <p class="certificate-date">February 2024</p>
-                    <a href="#" class="btn certificate-btn">View Certificate</a>
+                    <a href="resources/ev.jpeg" target="_blank" class="btn certificate-btn">View Certificate</a>
                 </div>
             </div>
         </div>
@@ -1791,13 +1859,12 @@ img {
         </div>
         <div class="resume-content">
             <div class="resume-preview">
-                <img src="/api/placeholder/400/550" alt="Resume Preview">
+                <img src="./resources/cv-preview.png" alt="Resume Preview">
             </div>
             <div class="resume-download">
-                <h3>Download My Resume</h3>
-                <p>Get a copy of my detailed resume to learn more about my qualifications, experiences, and skills.</p>
-                <a href="#" class="btn download-btn"><i class="fas fa-download"></i> Download PDF</a>
-                <a href="#" class="btn view-btn"><i class="fas fa-eye"></i> View Online</a>
+                <h3>My Resume</h3>
+                <p>Get a copy of my detailed resume to learn more about my qualifications, experiences, and skills.</p>                  
+                <a href="./resources/vc.pdf" class="btn view-btn"><i class="fas fa-eye"></i> View Online</a>
             </div>
         </div>
     </section>
@@ -1855,7 +1922,7 @@ img {
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <h2>Nitin<span>Thakur</span></h2>
+                <h2>Nitin Thakur</h2>
                 <p>Computer Science Engineering Student</p>
             </div>
             <div class="footer-links">
@@ -2123,6 +2190,5 @@ window.addEventListener('load', () => {
     }
 });
 </script>
-
 </body>
 </html>
